@@ -1,14 +1,14 @@
-import React from 'react';
+import React from "react";
 
 export const Clock = ({ timeZone }) => {
   const now = new Date();
   const options = {
     timeZone,
-    hour: 'numeric',
-    minute: 'numeric',
+    hour: "numeric",
+    minute: "numeric",
     hour12: true,
   };
-  const formattedTime = new Intl.DateTimeFormat('en-GB', options).format(now);
+  const formattedTime = new Intl.DateTimeFormat("en-GB", options).format(now);
 
   return (
     <div>
