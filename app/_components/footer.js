@@ -5,7 +5,7 @@ import { Clock } from "./clock";
 
 export const Footer = () => {
   return (
-    <div className=" bg-gray-950/50 pt-64 border-t border-gray-100/25 h-[100vh]">
+    <div className="bg-gray-950/50 pt-64 border-t border-gray-100/25 h-[100vh]">
       <div className="container mx-auto space-y-28">
         <div className="space-y-10">
           <div>

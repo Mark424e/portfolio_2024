@@ -6,7 +6,7 @@ export const Clock = ({ timeZone }) => {
     timeZone,
     hour: "numeric",
     minute: "numeric",
-    hour12: true,
+    hour12: false,
   };
   const formattedTime = new Intl.DateTimeFormat("en-GB", options).format(now);
 
