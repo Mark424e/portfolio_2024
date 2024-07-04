@@ -1,5 +1,12 @@
+"use client";
+
 import { React } from "react";
 import Image from "next/image";
+import { gsap } from 'gsap';
+import { useGSAP } from "@gsap/react";
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
+gsap.registerPlugin(ScrollTrigger);
 
 const projects = [
   {
@@ -41,16 +48,34 @@ const projects = [
 ];
 
 export const Projects = () => {
+  useGSAP(() => {
+    projects.forEach((project, index) => {
+      gsap.from(`.fade-object-${index}`, {
+        scrollTrigger: {
+          trigger: `.fade-object-${index}`,
+          start: 'top bottom', // start animation when top of the trigger hits bottom of viewport
+          end: 'top center', // end animation when top of the trigger hits center of viewport
+          toggleActions: 'restart none none reset', // restart animation on re-entering viewport
+        },
+        opacity: 0, // start with opacity 0
+        y: 20, // start with y offset
+        duration: 1, // animation duration
+        ease: 'power2.out', // easing function
+      });
+    });
+  }, []);
+
   return (
     <div id="projects" className="container mx-auto py-14">
       <div className="space-y-8">
-        <h1 className="text-5xl text-center md:text-start font-bold leading-none">
+        <h1 className="text-5xl text-center md:text-start font-semibold leading-tight fade-object">
           My
-          <span className="text-primary">&nbsp;projects</span>
+          <br />
+          <span className="text-primary">Projects</span>
         </h1>
         <ul className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {projects.map((project, index) => (
-            <li key={index} className="flex">
+            <li key={index} className={`flex fade-object-${index}`}>
               <div className="bg-gray-950/50 border border-gray-100/25 transition hover:border-gray-200/50 p-4 rounded-xl flex flex-col flex-grow">
                 <div className="grid xl:grid-cols-2 gap-4 flex-grow">
                   <div className="flex flex-col justify-between gap-8 flex-grow">
@@ -87,7 +112,10 @@ export const Projects = () => {
                       <div>
                         <ul className="flex flex-wrap gap-2 text-sm text-text">
                           {project.technologies.map((tech, idx) => (
-                            <li key={idx} className="bg-accent px-2 rounded-full">
+                            <li
+                              key={idx}
+                              className="bg-accent px-2 rounded-full"
+                            >
                               {tech}
                             </li>
                           ))}
