@@ -14,8 +14,8 @@ const projects = [
   {
     title: "E-Commerce Webshop",
     description:
-      "A refreshing lemonade webshop built with React. Features dynamic product displays, real-time inventory updates, and a sleek, responsive design.",
-    // vercelLink: "NO VERCEL LINK",
+      "An e-commerce webshop that offers login/register features with efficient product management, cart information, and a modern, responsive design.",
+    // vercelLink: "NO LINK",
     githubLink: "https://github.com/Mark424e/webshop",
     technologies: ["PHP", "MySQL", "TailWindCSS"],
     imageSrc: "/project4.webp",
@@ -24,7 +24,7 @@ const projects = [
     title: "Lemonade Webshop",
     description:
       "A refreshing lemonade webshop built with React. Features dynamic product displays, real-time inventory updates, and a sleek, responsive design.",
-      vercelLink: "https://lemonadestand-mark.vercel.app/",
+    vercelLink: "https://lemonadestand-mark.vercel.app/",
     githubLink: "https://github.com/Mark424e/lemonadestand",
     technologies: ["React", "JavaScript", "Axios", "TailWindCSS"],
     imageSrc: "/project2.webp",
@@ -36,80 +36,86 @@ const projects = [
     vercelLink: "https://gilleleje-isen.vercel.app/",
     githubLink: "https://github.com/Mark424e/Gilleleje-Isen",
     technologies: ["HTML", "CSS", "Sass"],
-    imageSrc: "/project1.webp",
+    imageSrc: "/project3.webp",
   },
 ];
 
 export const Projects = () => {
   return (
-    <div id="projects" className="container mx-auto">
-      <ul className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-        {projects.map((project, index) => (
-          <li key={index} className="flex">
-            <div className="bg-gray-950/50 border border-gray-100/25 transition hover:border-gray-200/50 p-4 rounded-xl flex flex-col flex-grow">
-              <div className="grid xl:grid-cols-2 gap-4 flex-grow">
-                <div className="flex flex-col justify-between gap-8 flex-grow">
-                  <div className="space-y-4">
-                    <h1 className="text-xl font-semibold">{project.title}</h1>
-                    <p className="text-sm">{project.description}</p>
-                  </div>
-                  <div className="space-y-4">
-                    <div className="text-xs">
-                      {project.vercelLink && (
-                        <>
+    <div id="projects" className="container mx-auto py-14">
+      <div className="space-y-8">
+        <h1 className="text-5xl text-center md:text-start font-bold leading-none">
+          My
+          <span className="text-primary">&nbsp;projects</span>
+        </h1>
+        <ul className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          {projects.map((project, index) => (
+            <li key={index} className="flex">
+              <div className="bg-gray-950/50 border border-gray-100/25 transition hover:border-gray-200/50 p-4 rounded-xl flex flex-col flex-grow">
+                <div className="grid xl:grid-cols-2 gap-4 flex-grow">
+                  <div className="flex flex-col justify-between gap-8 flex-grow">
+                    <div className="space-y-4">
+                      <h1 className="text-xl font-semibold">{project.title}</h1>
+                      <p className="text-sm">{project.description}</p>
+                    </div>
+                    <div className="space-y-4">
+                      <div className="text-xs">
+                        {project.vercelLink && (
+                          <>
+                            <a
+                              className="nav-link text-gray-500 hover:text-text"
+                              href={project.vercelLink}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                            >
+                              View on Vercel
+                            </a>
+                            <br />
+                          </>
+                        )}
+                        {project.githubLink && (
                           <a
                             className="nav-link text-gray-500 hover:text-text"
-                            href={project.vercelLink}
+                            href={project.githubLink}
                             target="_blank"
                             rel="noopener noreferrer"
                           >
-                            View on Vercel
+                            View Github
                           </a>
-                          <br />
-                        </>
-                      )}
-                      {project.githubLink && (
-                        <a
-                          className="nav-link text-gray-500 hover:text-text"
-                          href={project.githubLink}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          View Github
-                        </a>
-                      )}
-                    </div>
-                    <div>
-                      <ul className="flex flex-wrap gap-2 text-sm text-text">
-                        {project.technologies.map((tech, idx) => (
-                          <li key={idx} className="bg-accent px-2 rounded-full">
-                            {tech}
-                          </li>
-                        ))}
-                      </ul>
+                        )}
+                      </div>
+                      <div>
+                        <ul className="flex flex-wrap gap-2 text-sm text-text">
+                          {project.technologies.map((tech, idx) => (
+                            <li key={idx} className="bg-accent px-2 rounded-full">
+                              {tech}
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div className="transition md:hover:scale-95">
-                  <a
-                    href={project.vercelLink || project.githubLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <Image
-                      className="min-h-full object-cover rounded-xl"
-                      src={project.imageSrc}
-                      width={1920}
-                      height={1080}
-                      alt={`${project.title} Image`}
-                    />
-                  </a>
+                  <div className="transition md:hover:scale-95">
+                    <a
+                      href={project.vercelLink || project.githubLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <Image
+                        className="min-h-full object-cover rounded-xl"
+                        src={project.imageSrc}
+                        width={1920}
+                        height={1080}
+                        alt={`${project.title} Image`}
+                      />
+                    </a>
+                  </div>
                 </div>
               </div>
-            </div>
-          </li>
-        ))}
-      </ul>
+            </li>
+          ))}
+        </ul>
+      </div>
     </div>
   );
 };
