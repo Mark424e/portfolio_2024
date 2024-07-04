@@ -49,18 +49,31 @@ const projects = [
 
 export const Projects = () => {
   useGSAP(() => {
-    projects.forEach((project, index) => {
+    gsap.from('.fade-title', {
+      scrollTrigger: {
+        trigger: '.fade-title',
+        start: 'top bottom',
+        end: 'top center',
+        toggleActions: 'restart none none reset',
+      },
+      opacity: 0,
+      y: 20,
+      duration: 1,
+      ease: 'power2.out',
+    });
+
+    projects.forEach((_, index) => {
       gsap.from(`.fade-object-${index}`, {
         scrollTrigger: {
           trigger: `.fade-object-${index}`,
-          start: 'top bottom', // start animation when top of the trigger hits bottom of viewport
-          end: 'top center', // end animation when top of the trigger hits center of viewport
-          toggleActions: 'restart none none reset', // restart animation on re-entering viewport
+          start: 'top bottom',
+          end: 'top center',
+          toggleActions: 'restart none none reset',
         },
-        opacity: 0, // start with opacity 0
-        y: 20, // start with y offset
-        duration: 1, // animation duration
-        ease: 'power2.out', // easing function
+        opacity: 0,
+        y: 20,
+        duration: 1,
+        ease: 'power2.out',
       });
     });
   }, []);
@@ -68,7 +81,7 @@ export const Projects = () => {
   return (
     <div id="projects" className="container mx-auto py-14">
       <div className="space-y-8">
-        <h1 className="text-5xl text-center md:text-start font-semibold leading-tight fade-object">
+        <h1 className="text-5xl text-center md:text-start font-semibold leading-tight fade-title">
           My
           <br />
           <span className="text-primary">Projects</span>
