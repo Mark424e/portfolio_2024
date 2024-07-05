@@ -1,6 +1,6 @@
 "use client";
 
-import Link from "next/link";
+import Image from "next/image";
 import { Clock } from "./clock";
 import { gsap } from "gsap";
 import { ScrollToPlugin } from "gsap/ScrollToPlugin";
@@ -17,9 +17,16 @@ export const Header = () => {
       <div className="absolute left-0 right-0 h-auto">
         <div className="container mx-auto">
           <div className="flex justify-between items-center h-56">
-            <div className="text-xl font-bold">
-              <Link href="/">Mark Thomassen</Link>
-            </div>
+            <button
+              onClick={() => handleScrollTo("#skills")}
+            >
+              <Image
+                src="/webdevmark.svg"
+                width={50}
+                height={50}
+                alt="Picture of the author"
+              />
+            </button>
             <ul className="flex space-x-8 items-center uppercase text-xs">
               <li>
                 <Clock timeZone="Europe/Copenhagen" />

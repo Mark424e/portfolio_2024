@@ -1,9 +1,19 @@
+"use client";
+
 import React from "react";
-import Link from "next/link";
 import Image from "next/image";
 import { Clock } from "./clock";
 
+import { gsap } from "gsap";
+import { ScrollToPlugin } from "gsap/ScrollToPlugin";
+
+gsap.registerPlugin(ScrollToPlugin);
+
 export const Footer = () => {
+  const handleScrollTo = (target) => {
+    gsap.to(window, { duration: 1, scrollTo: target, ease: "power2.inOut" });
+  };
+
   return (
     <div className="bg-gray-950/50 pt-64 pb-28 border-t border-gray-100/25 h-[100vh]">
       <div className="container mx-auto space-y-28">
@@ -40,10 +50,7 @@ export const Footer = () => {
                 </a>
               </li>
               <li>
-                <a
-                  href="https://github.com/Mark424e" 
-                  target="_blank"
-                >
+                <a href="https://github.com/Mark424e" target="_blank">
                   <Image
                     src="/github.svg"
                     width={25}
@@ -59,9 +66,14 @@ export const Footer = () => {
           <div className="py-8 flex justify-center items-center">
             <div className="flex gap-2 items-center w-full">
               <div className="h-[1px] w-full bg-white me-4"></div>
-              <div className="text-xl font-bold whitespace-nowrap">
-                <Link href="/">Mark Thomassen</Link>
-              </div>
+              <button onClick={() => handleScrollTo("#skills")}>
+                <Image
+                  src="/webdevmark.svg"
+                  width={100}
+                  height={100}
+                  alt="Picture of the author"
+                />
+              </button>
               <div className="h-[1px] w-full bg-white ms-4"></div>
             </div>
           </div>
