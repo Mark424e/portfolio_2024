@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import React, { useEffect, useRef } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import AutoScroll from "embla-carousel-auto-scroll";
@@ -55,8 +56,10 @@ const EmblaCarousel = ({ options }) => {
         <div className="embla__container py-2">
           {LOGO_URLS.map((logoUrl, index) => (
             <div className="embla__slide" key={index}>
-              <img
+              <Image
                 src={logoUrl}
+                width={200}
+                height={200}
                 alt={`Logo ${index + 1}`}
                 className="embla__slide__number"
               />

@@ -10,7 +10,7 @@ export const Footer = () => {
         <div className="space-y-10">
           <div>
             <h1 className="text-7xl md:text-5xl xl:text-7xl font-bold leading-none">
-              Let's
+              Let&apos;s
             </h1>
             <h1 className="text-7xl md:text-5xl xl:text-7xl font-bold leading-none bg-gradient-to-t from-primary to-text inline-block text-transparent bg-clip-text">
               Connect.
@@ -40,7 +40,10 @@ export const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="https://github.com/Mark424e" target="_blank">
+                <a
+                  href="https://github.com/Mark424e" 
+                  target="_blank"
+                >
                   <Image
                     src="/github.svg"
                     width={25}
