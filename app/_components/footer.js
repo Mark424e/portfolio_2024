@@ -12,7 +12,7 @@ export const Footer = () => {
             <h1 className="text-7xl md:text-5xl xl:text-7xl font-bold leading-none">
               Let's
             </h1>
-            <h1 className="text-primary text-7xl md:text-5xl xl:text-7xl font-bold leading-none">
+            <h1 className="text-7xl md:text-5xl xl:text-7xl font-bold leading-none bg-gradient-to-t from-primary to-text inline-block text-transparent bg-clip-text">
               Connect.
             </h1>
           </div>

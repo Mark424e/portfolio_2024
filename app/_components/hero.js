@@ -43,7 +43,7 @@ export const Hero = () => {
           <div className="space-y-4">
             <h1 className="text-7xl md:text-5xl xl:text-7xl font-bold leading-none">
               Hi, I'm
-              <span className="text-primary">&nbsp;Mark</span>
+              <span className="bg-gradient-to-t from-primary to-text inline-block text-transparent bg-clip-text">&nbsp;Mark</span>
             </h1>
             <div>
               <h1 className="text-6xl md:text-5xl xl:text-7xl font-bold leading-none">

@@ -84,7 +84,7 @@ export const Projects = () => {
         <h1 className="text-5xl text-center md:text-start font-semibold leading-tight fade-title">
           My
           <br />
-          <span className="text-primary">Projects</span>
+          <span className="bg-gradient-to-t from-primary to-text inline-block text-transparent bg-clip-text">Projects</span>
         </h1>
         <ul className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {projects.map((project, index) => (
