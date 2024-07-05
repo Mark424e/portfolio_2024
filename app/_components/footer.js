@@ -5,7 +5,7 @@ import { Clock } from "./clock";
 
 export const Footer = () => {
   return (
-    <div className="bg-gray-950/50 pt-64 border-t border-gray-100/25 h-[100vh]">
+    <div className="bg-gray-950/50 pt-64 pb-28 border-t border-gray-100/25 h-[100vh]">
       <div className="container mx-auto space-y-28">
         <div className="space-y-10">
           <div>
@@ -35,7 +35,7 @@ export const Footer = () => {
                     src="/linkedin.svg"
                     width={25}
                     height={25}
-                    alt="Picture of the author"
+                    alt="Social Media Icon"
                   />
                 </a>
               </li>
@@ -45,7 +45,7 @@ export const Footer = () => {
                     src="/github.svg"
                     width={25}
                     height={25}
-                    alt="Picture of the author"
+                    alt="Social Media Icon"
                   />
                 </a>
               </li>
