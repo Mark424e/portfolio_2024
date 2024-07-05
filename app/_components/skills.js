@@ -47,36 +47,39 @@ const skills = [
 export const Skills = () => {
   return (
     <AuroraBackground>
-        <div className="container mx-auto py-14 space-y-8">
-          <h1 className="text-text text-5xl text-center md:text-start font-semibold leading-tight fade-title">
-            My
-            <br />
-            <span className="bg-gradient-to-t from-primary to-text inline-block text-transparent bg-clip-text">
-              Skillset
-            </span>
-          </h1>
-          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 xl:gap-8">
-            {skills.map((skill) => (
-              <CardContainer className="flex bg-gradient-to-r from-gray-950/50 via-gray-950/50 backdrop-blur-xl to-black/80 shadow-xl p-6 rounded-xl flex-col flex-grow">
-                  <CardBody className="flex flex-col justify-center items-center gap-4 flex-grow text-center">
-                      <div>
-                        <Image
-                          className="min-h-full object-cover"
-                          src={skill.imageSrc}
-                          width={50}
-                          height={50}
-                          alt={`${skill.title} Image`}
-                        />
-                      </div>
-                      <div className="space-y-4">
-                        <h1 className="text-xl font-semibold">{skill.title}</h1>
-                        <p className="text-sm">{skill.description}</p>
-                      </div>
-                  </CardBody>
-              </CardContainer>
-            ))}
-          </div>
+      <div className="container mx-auto py-14 space-y-8">
+        <h1 className="text-text text-5xl text-center md:text-start font-semibold leading-tight fade-title">
+          My
+          <br />
+          <span className="bg-gradient-to-t from-primary to-text inline-block text-transparent bg-clip-text">
+            Skillset
+          </span>
+        </h1>
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 xl:gap-8">
+          {skills.map((skill, index) => (
+            <CardContainer
+              key={index}
+              className="flex bg-gradient-to-r from-gray-950/50 via-gray-950/50 backdrop-blur-xl to-black/80 shadow-xl p-6 rounded-xl flex-col flex-grow"
+            >
+              <CardBody className="flex flex-col justify-center items-center gap-4 flex-grow text-center">
+                <div>
+                  <Image
+                    className="min-h-full object-cover"
+                    src={skill.imageSrc}
+                    width={50}
+                    height={50}
+                    alt={`${skill.title} Image`}
+                  />
+                </div>
+                <div className="space-y-4">
+                  <h1 className="text-xl font-semibold">{skill.title}</h1>
+                  <p className="text-sm">{skill.description}</p>
+                </div>
+              </CardBody>
+            </CardContainer>
+          ))}
         </div>
+      </div>
     </AuroraBackground>
   );
 };
