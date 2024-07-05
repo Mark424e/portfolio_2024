@@ -9,6 +9,7 @@ module.exports = {
     extend: {
       boxShadow: {
         '3xl': '0 35px 60px -15px rgba(0, 0, 0, 0.3)',
+        'resume': 'rgba(0, 0, 0, 0.3) -15px 15px',
       },
       colors: {
         text: '#e3e3f5',
