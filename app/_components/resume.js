@@ -41,7 +41,7 @@ export const Resume = () => {
   }, []);
   return (
     <div id="resume" class="container mx-auto grid py-14 justify-center">
-      <div className="w-fit group">
+      <div className="w-fit group relative">
         <div className="resume-card_alt absolute">
           <div class="translate-x-16 group-hover:translate-x-14 group-hover:translate-y-4 transition duration-300 scale-95 group-hover:scale-90 md:translate-x-28 md:translate-y-4 md:group-hover:translate-x-20 md:group-hover:translate-y-8 bg-gray-800 rounded-2xl shadow-lg w-56 md:w-80 text-gray-700">
             <Image
@@ -100,11 +100,29 @@ export const Resume = () => {
             </div>
           </div>
         </div>
+        <div className="absolute top-0 translate-y-28 h-full w-full -z-50">
+          <div className="relative w-full h-full">
+            <div className="absolute top-0 h-28 w-28 md:h-80 md:w-80 -left-1/3 shadow-primary shadow-3xl blur-3xl bg-primary rounded-full"></div>
+            <div className="absolute top-0 h-28 w-28 md:h-80 md:w-80 -right-1/3 shadow-secondary shadow-3xl blur-3xl bg-secondary rounded-full"></div>
+            <div className="absolute top-0 h-28 w-28 md:h-80 md:w-80 left-0 right-0 translate-y-1/2 shadow-accent shadow-3xl blur-3xl bg-accent rounded-full"></div>
+          </div>
+        </div>
       </div>
       <div className="grid justify-center mt-14 md:mt-28">
-        <button className="bg-primary transition hover:bg-secondary hover:scale-105 hover:text-text rounded-full w-fit py-4 px-8 text-background">
-          View Resume
-        </button>
+        <a href="https://drive.google.com/file/d/1W3R0WUfp__Ghl8Oi7qt--B2ZSdrFb2kY/view" target="_blank" class="group relative inline-block h-[60px] w-[200px] overflow-hidden rounded-full text-lg text-background">
+          <div class="h-[inherit] w-[inherit] overflow-hidden rounded-full bg-primary [transition:_transform_1.5s_cubic-bezier(.19,1,.22,1)] group-hover:scale-[.94]">
+            <span class="absolute bottom-0 left-1/2 z-20 block h-[200%] w-[120%] -translate-x-0 translate-y-[100%] bg-accent [border-radius:999px_999px_0_0] [translate:-50%] group-hover:translate-y-[10px] group-hover:[border-radius:60%_60%_0_0] group-hover:[transition:_transform_1s_cubic-bezier(.19,1,.22,1)_200ms,_border-radius_.2s_cubic-bezier(.19,1,.22,1)_270ms]" />
+            <span class="absolute bottom-0 left-1/2 z-20 block h-[200%] w-[120%] -translate-x-0 translate-y-[100%] bg-primary [border-radius:999px_999px_0_0] [translate:-50%] group-hover:translate-y-[10px] group-hover:[border-radius:60%_60%_0_0] group-hover:[transition:_transform_1s_cubic-bezier(.19,1,.22,1)_300ms,_border-radius_.2s_cubic-bezier(.19,1,.22,1)_470ms]" />
+            <span class="absolute bottom-0 left-1/2 z-20 block h-[200%] w-[120%] -translate-x-0 translate-y-[100%] bg-secondary [border-radius:999px_999px_0_0] [translate:-50%] group-hover:translate-y-[10px] group-hover:[border-radius:60%_60%_0_0] group-hover:[transition:_transform_1s_cubic-bezier(.19,1,.22,1)_380ms,_border-radius_.2s_cubic-bezier(.19,1,.22,1)_670ms]" />
+          </div>
+
+          <span class="absolute inset-0 z-10 m-auto flex w-4/5 items-center justify-center font-semibold group-hover:-translate-y-1/3 group-hover:opacity-0 group-hover:[transition:_transform_1s_cubic-bezier(.32,.99,.49,.99),_opacity_.4s]">
+            View Resume
+          </span>
+          <span class="absolute inset-0 z-10 m-auto flex w-4/5 translate-y-1/3 items-center justify-center font-semibold opacity-0 group-hover:translate-y-0 group-hover:opacity-100 group-hover:[transition:_1s_all_cubic-bezier(.32,.99,.49,.99)] text-text">
+            View Resume
+          </span>
+        </a>
       </div>
       <div className="grid justify-center mt-8">
         <div className="text-gray-500">
