@@ -66,7 +66,7 @@ export const Footer = () => {
           <div className="py-8 flex justify-center items-center">
             <div className="flex gap-2 items-center w-full">
               <div className="h-[1px] w-full bg-white me-4"></div>
-              <button onClick={() => handleScrollTo("#skills")}>
+              <button onClick={() => handleScrollTo("#home")}>
                 <Image
                   src="/webdevmark.svg"
                   width={100}

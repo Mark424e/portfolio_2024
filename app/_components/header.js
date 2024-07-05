@@ -18,7 +18,7 @@ export const Header = () => {
         <div className="container mx-auto">
           <div className="flex justify-between items-center h-56">
             <button
-              onClick={() => handleScrollTo("#skills")}
+              onClick={() => handleScrollTo("#home")}
             >
               <Image
                 src="/webdevmark.svg"

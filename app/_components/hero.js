@@ -65,7 +65,7 @@ export const Hero = () => {
         </div>
         <div className="relative flex justify-center">
           <Image
-            className="floatingImage h-full"
+            className="floatingImage h-full z-50"
             src="/hero-image.webp"
             width={500}
             height={500}
@@ -73,7 +73,7 @@ export const Hero = () => {
           />
           <div
             ref={boxRef}
-            className="absolute w-80 h-80 bg-accent left-0 right-0 mx-auto top-[50%] translate-y-[-50%] z-[-9999]"
+            className="absolute w-80 h-80 bg-accent left-0 right-0 mx-auto top-[50%] translate-y-[-50%]"
           ></div>
         </div>
       </div>

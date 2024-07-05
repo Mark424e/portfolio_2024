@@ -2,9 +2,9 @@
 
 import { React } from "react";
 import Image from "next/image";
-import { gsap } from 'gsap';
+import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -49,42 +49,44 @@ const projects = [
 
 export const Projects = () => {
   useGSAP(() => {
-    gsap.from('.fade-title', {
+    gsap.from(".fade-title", {
       scrollTrigger: {
-        trigger: '.fade-title',
-        start: 'top bottom',
-        end: 'top center',
-        toggleActions: 'restart none none reset',
+        trigger: ".fade-title",
+        start: "top bottom",
+        end: "top center",
+        toggleActions: "restart none none reset",
       },
       opacity: 0,
       y: 20,
       duration: 1,
-      ease: 'power2.out',
+      ease: "power2.out",
     });
 
     projects.forEach((_, index) => {
       gsap.from(`.fade-object-${index}`, {
         scrollTrigger: {
           trigger: `.fade-object-${index}`,
-          start: 'top bottom',
-          end: 'top center',
-          toggleActions: 'restart none none reset',
+          start: "top bottom",
+          end: "top center",
+          toggleActions: "restart none none reset",
         },
         opacity: 0,
         y: 20,
         duration: 1,
-        ease: 'power2.out',
+        ease: "power2.out",
       });
     });
   }, []);
 
   return (
-    <div id="projects" className="container mx-auto py-14">
+    <div className="container mx-auto py-14">
       <div className="space-y-8">
         <h1 className="text-5xl text-center md:text-start font-semibold leading-tight fade-title">
           My
           <br />
-          <span className="bg-gradient-to-t from-primary to-text inline-block text-transparent bg-clip-text">Projects</span>
+          <span className="bg-gradient-to-t from-primary to-text inline-block text-transparent bg-clip-text">
+            Projects
+          </span>
         </h1>
         <ul className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {projects.map((project, index) => (

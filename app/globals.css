@@ -8,6 +8,12 @@ body {
   overflow-x: hidden;
 }
 
+#skills {
+  background-image: url(../public/bgparallax.webp);
+  background-position: center;
+  background-size: cover;
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
