@@ -7,6 +7,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      boxShadow: {
+        'glow': '0 0 20px rgba(255, 255, 255, 0.5)',
+      },
       colors: {
         text: '#e3e3f5',
         background: '#080a17',
@@ -21,5 +24,6 @@ module.exports = {
       },
     },
   },
+  variants: {},
   plugins: [],
 };
