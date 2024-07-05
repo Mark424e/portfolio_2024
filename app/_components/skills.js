@@ -2,7 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
-import { motion } from "framer-motion";
+import { CardBody, CardContainer } from "./3d-card";
 import { AuroraBackground } from "./aurora-background";
 
 const skills = [
@@ -55,27 +55,27 @@ export const Skills = () => {
               Skillset
             </span>
           </h1>
-          <ul className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 xl:gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 xl:gap-8">
             {skills.map((skill) => (
-              <li className="flex bg-gradient-to-r from-gray-950/50 via-gray-950/50 backdrop-blur-xl to-black/80 shadow-xl p-6 rounded-xl flex-col flex-grow">
-                  <div className="flex flex-col justify-center items-center gap-4 flex-grow text-center">
-                    <div>
-                      <Image
-                        className="min-h-full object-cover"
-                        src={skill.imageSrc}
-                        width={50}
-                        height={50}
-                        alt={`${skill.title} Image`}
-                      />
-                    </div>
-                    <div className="space-y-4">
-                      <h1 className="text-xl font-semibold">{skill.title}</h1>
-                      <p className="text-sm">{skill.description}</p>
-                    </div>
-                  </div>
-              </li>
+              <CardContainer className="flex bg-gradient-to-r from-gray-950/50 via-gray-950/50 backdrop-blur-xl to-black/80 shadow-xl p-6 rounded-xl flex-col flex-grow">
+                  <CardBody className="flex flex-col justify-center items-center gap-4 flex-grow text-center">
+                      <div>
+                        <Image
+                          className="min-h-full object-cover"
+                          src={skill.imageSrc}
+                          width={50}
+                          height={50}
+                          alt={`${skill.title} Image`}
+                        />
+                      </div>
+                      <div className="space-y-4">
+                        <h1 className="text-xl font-semibold">{skill.title}</h1>
+                        <p className="text-sm">{skill.description}</p>
+                      </div>
+                  </CardBody>
+              </CardContainer>
             ))}
-          </ul>
+          </div>
         </div>
     </AuroraBackground>
   );
