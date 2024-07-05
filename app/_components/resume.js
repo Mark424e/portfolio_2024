@@ -43,7 +43,7 @@ export const Resume = () => {
     <div id="resume" className="container mx-auto grid py-14 justify-center">
       <div className="w-fit group relative">
         <div className="resume-card_alt absolute">
-          <div className="translate-x-16 group-hover:translate-x-14 group-hover:translate-y-4 transition duration-300 scale-95 group-hover:scale-90 md:translate-x-28 md:translate-y-4 md:group-hover:translate-x-20 md:group-hover:translate-y-8 bg-gray-800 rounded-2xl w-56 md:w-80 text-gray-700 shadow-resume">
+          <div className="translate-x-16 group-hover:translate-x-14 group-hover:translate-y-4 transition duration-300 scale-95 group-hover:scale-90 md:translate-x-28 md:translate-y-12 md:group-hover:translate-x-20 md:group-hover:translate-y-8 bg-gray-800 rounded-2xl w-56 md:w-80 text-gray-700 shadow-resume">
             <Image
               className="object-cover rounded-2xl h-[310px] md:h-[500px]"
               src="/codesnippet.webp"
@@ -54,7 +54,7 @@ export const Resume = () => {
           </div>
         </div>
         <div className="resume-card relative">
-          <div className="translate transition duration-300 group-hover:rotate-1 group-hover:scale-95 group-hover:-translate-y-5 relative bg-white rounded-2xl p-6 text-base w-56 md:w-80 text-gray-700 shadow-resume">
+          <div className="transition duration-300 group-hover:rotate-1 group-hover:scale-95 group-hover:-translate-y-5 relative bg-white rounded-2xl p-6 text-base w-56 md:w-80 text-gray-700 shadow-resume">
             <div className="absolute -right-10 top-8 transform transition duration-300 group-hover:-translate-y-2">
               <Image
                 className="h-20 w-20 rounded-full border-2 border-white"
