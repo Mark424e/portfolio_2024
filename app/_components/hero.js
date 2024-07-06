@@ -37,13 +37,15 @@ export const Hero = () => {
   }, []);
 
   return (
-    <div className="container mx-auto pt-56 pb-28 px-4 md:px-0">
+    <div className="container mx-auto pt-40 md:pt-56 py-14 md:py-40 lg:py-64 px-4 md:px-0">
       <div className="grid md:grid-cols-2 gap-8">
         <div className="relative text-center md:text-start">
           <div className="space-y-4">
             <h1 className="text-7xl md:text-5xl xl:text-7xl font-bold leading-none">
               Hi, I&apos;m
-              <span className="bg-gradient-to-t from-primary to-text inline-block text-transparent bg-clip-text">&nbsp;Mark</span>
+              <span className="bg-gradient-to-t from-primary to-text inline-block text-transparent bg-clip-text">
+                &nbsp;Mark
+              </span>
             </h1>
             <div>
               <h1 className="text-6xl md:text-5xl xl:text-7xl font-bold leading-none">

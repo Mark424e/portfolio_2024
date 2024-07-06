@@ -42,7 +42,7 @@ export const Resume = () => {
   return (
     <div
       id="resume"
-      className="container mx-auto grid py-14 justify-center px-4 md:px-0"
+      className="container mx-auto grid py-14 md:py-40 lg:py-64 justify-center px-4 md:px-0"
     >
       <div className="w-fit group relative">
         <div className="resume-card_alt absolute">

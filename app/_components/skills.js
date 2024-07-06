@@ -4,6 +4,7 @@ import React from "react";
 import Image from "next/image";
 import { CardBody, CardContainer } from "./ui/3d-card";
 import { AuroraBackground } from "./ui/aurora-background";
+import { AnimatedFadeIn } from "./ui/animatedFadeIn";
 
 const skills = [
   {
@@ -49,14 +50,16 @@ export const Skills = () => {
     <AuroraBackground>
       <div className="block z-10 absolute top-0 w-full h-12 bg-gradient-to-b from-background to-transparent pointer-events-none"></div>
       <div className="block z-10 absolute bottom-0 w-full h-12 bg-gradient-to-t from-background to-transparent pointer-events-none"></div>
-      <div className="container mx-auto py-14 space-y-8">
-        <h1 className="text-text text-5xl text-center md:text-start font-semibold leading-tight fade-title">
-          My
-          <br />
-          <span className="bg-gradient-to-t from-primary to-text inline-block text-transparent bg-clip-text">
-            Skillset
-          </span>
-        </h1>
+      <div className="container mx-auto py-14 md:py-40 lg:py-64 space-y-8">
+        <AnimatedFadeIn>
+          <h1 className="text-text text-5xl text-center md:text-start font-semibold leading-tight fade-title">
+            My
+            <br />
+            <span className="bg-gradient-to-t from-primary to-text inline-block text-transparent bg-clip-text">
+              Skillset
+            </span>
+          </h1>
+        </AnimatedFadeIn>
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 xl:gap-8">
           {skills.map((skill, index) => (
             <CardContainer

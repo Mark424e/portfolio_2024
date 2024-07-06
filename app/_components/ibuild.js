@@ -171,7 +171,7 @@ export const Ibuild = () => {
   const words = ["optimized", "polished", "outstanding", "beautiful", "modern"];
 
   return (
-    <div className="container mx-auto py-28 px-4 md:px-0 cursor-default">
+    <div className="container mx-auto py-14 md:py-40 lg:py-64 px-4 md:px-0 cursor-default">
       <div className="relative">
         <div className="flex justify-start text-lg leading-8 text-gray-500">
           <p className="w-full sm:w-1/2 xl:w-1/3">
@@ -208,10 +208,10 @@ export const Ibuild = () => {
         </div>
         <div className="flex justify-end text-lg leading-8 text-gray-500">
           <p className="w-full sm:w-1/2 xl:w-1/3">
-            Living in Denmark, I love spending time with friends, whether we&apos;re
-            gaming together or hanging out in person. Music is a big part of my
-            life — I enjoy discovering new tunes, exploring different genres,
-            and even creating my own music.
+            Living in Denmark, I love spending time with friends, whether
+            we&apos;re gaming together or hanging out in person. Music is a big
+            part of my life — I enjoy discovering new tunes, exploring different
+            genres, and even creating my own music.
           </p>
         </div>
         <div className="absolute top-0 h-full w-full -z-50">

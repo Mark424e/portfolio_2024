@@ -2,12 +2,14 @@
 
 import { React } from "react";
 import Image from "next/image";
+import { AnimatedFadeIn } from "./ui/animatedFadeIn";
+/*
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
-
+*/
 const projects = [
   {
     title: "React Weather Application",
@@ -48,6 +50,7 @@ const projects = [
 ];
 
 export const Projects = () => {
+  /*
   useGSAP(() => {
     gsap.from(".fade-title", {
       scrollTrigger: {
@@ -77,17 +80,20 @@ export const Projects = () => {
       });
     });
   }, []);
+  */
 
   return (
-    <div className="container mx-auto py-14 px-4 md:px-0">
+    <div className="container mx-auto py-14 md:py-40 lg:py-64 px-4 md:px-0">
       <div className="space-y-8">
-        <h1 className="text-5xl text-center md:text-start font-semibold leading-tight fade-title">
-          My
-          <br />
-          <span className="bg-gradient-to-t from-primary to-text inline-block text-transparent bg-clip-text">
-            Projects
-          </span>
-        </h1>
+        <AnimatedFadeIn>
+          <h1 className="text-5xl text-center md:text-start font-semibold leading-tight fade-title">
+            My
+            <br />
+            <span className="bg-gradient-to-t from-primary to-text inline-block text-transparent bg-clip-text">
+              Projects
+            </span>
+          </h1>
+        </AnimatedFadeIn>
         <ul className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {projects.map((project, index) => (
             <li key={index} className={`flex fade-object-${index}`}>
