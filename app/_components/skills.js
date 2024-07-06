@@ -2,8 +2,8 @@
 
 import React from "react";
 import Image from "next/image";
-import { CardBody, CardContainer } from "./3d-card";
-import { AuroraBackground } from "./aurora-background";
+import { CardBody, CardContainer } from "./ui/3d-card";
+import { AuroraBackground } from "./ui/aurora-background";
 
 const skills = [
   {

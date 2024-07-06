@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import Skillsets from "./skillsets";
+import Skillsets from "./ui/skillsets";
 
 import React, { useRef } from "react";
 import { gsap } from "gsap";
