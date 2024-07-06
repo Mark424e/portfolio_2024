@@ -14,6 +14,14 @@ body {
   background-size: cover;
 }
 
+@media (max-width: 480px) {
+  #skills {
+    background-repeat: no-repeat;
+    background-size: initial 100% !important;
+    background-attachment: fixed !important;
+  }
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
@@ -45,7 +53,7 @@ body {
 }
 
 .nav-link::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 0;
   height: 1px;
