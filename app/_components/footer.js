@@ -15,7 +15,7 @@ export const Footer = () => {
   };
 
   return (
-    <div className="bg-gray-950/50 pt-64 pb-28 border-t border-gray-100/25 h-[100vh]">
+    <div className="bg-gray-950/50 pt-64 pb-28 border-t border-gray-100/25 px-4 sm:px-0">
       <div className="container mx-auto space-y-28">
         <div className="space-y-10">
           <div>

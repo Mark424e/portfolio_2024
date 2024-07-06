@@ -37,7 +37,7 @@ export const Hero = () => {
   }, []);
 
   return (
-    <div className="container mx-auto pt-56 md:h-[100vh]">
+    <div className="container mx-auto pt-56 pb-28 px-4 sm:px-0">
       <div className="grid md:grid-cols-2 gap-8">
         <div className="relative text-center md:text-start">
           <div className="space-y-4">
