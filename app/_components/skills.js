@@ -47,6 +47,8 @@ const skills = [
 export const Skills = () => {
   return (
     <AuroraBackground>
+      <div className="block z-10 absolute top-0 w-full h-12 bg-gradient-to-b from-background to-transparent pointer-events-none"></div>
+      <div className="block z-10 absolute bottom-0 w-full h-12 bg-gradient-to-t from-background to-transparent pointer-events-none"></div>
       <div className="container mx-auto py-14 space-y-8">
         <h1 className="text-text text-5xl text-center md:text-start font-semibold leading-tight fade-title">
           My
