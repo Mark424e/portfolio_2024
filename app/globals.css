@@ -17,7 +17,7 @@ body {
 @media (max-width: 480px) {
   #skills {
     background-repeat: no-repeat;
-    background-size: initial 100% !important;
+    background-size: 100% !important;
     background-attachment: fixed !important;
   }
 }
