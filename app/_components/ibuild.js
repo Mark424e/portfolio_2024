@@ -23,7 +23,7 @@ export const Ibuild = () => {
     mm.add("(max-width: 639px)", () => {
       // Mobile
       gsap.to(topTextElement, {
-        translateX: 50,
+        translateX: 30,
         opacity: 1,
         scrollTrigger: {
           trigger: middleTextElement,
@@ -33,7 +33,7 @@ export const Ibuild = () => {
         },
       });
       gsap.to(bottomTextElement, {
-        translateX: -50,
+        translateX: -30,
         opacity: 1,
         scrollTrigger: {
           trigger: middleTextElement,
@@ -168,7 +168,7 @@ export const Ibuild = () => {
     return () => mm.revert();
   }, []);
 
-  const words = ["optimized", "elegant", "outstanding", "beautiful", "modern"];
+  const words = ["optimized", "polished", "outstanding", "beautiful", "modern"];
 
   return (
     <div className="container mx-auto py-28 px-4 md:px-0 cursor-default">
@@ -186,11 +186,16 @@ export const Ibuild = () => {
             ref={topTextRef}
             className="opacity-0 text-start text-4xl md:text-6xl lg:text-7xl mx-auto font-semibold text-text"
           >
-            I build
+            I deliver
           </p>
+          <div className="block lg:hidden text-center text-6xl md:text-8xl lg:text-9xl mx-auto font-bold italic">
+            <p className="z-10 inline-block bg-gradient-to-t from-primary to-text text-transparent bg-clip-text text-nowrap p-4">
+              POLISHED
+            </p>
+          </div>
           <div
             ref={middleTextRef}
-            className="text-center text-6xl md:text-8xl lg:text-9xl mx-auto font-bold italic"
+            className="hidden lg:block text-center text-6xl md:text-8xl lg:text-9xl mx-auto font-bold italic"
           >
             <FlipWords words={words} />
           </div>
@@ -206,7 +211,7 @@ export const Ibuild = () => {
             Living in Denmark, I love spending time with friends, whether we&apos;re
             gaming together or hanging out in person. Music is a big part of my
             life — I enjoy discovering new tunes, exploring different genres,
-            and even creating my own music with FL Studio.
+            and even creating my own music.
           </p>
         </div>
         <div className="absolute top-0 h-full w-full -z-50">
