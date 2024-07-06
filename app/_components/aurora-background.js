@@ -9,7 +9,7 @@ export const AuroraBackground = ({
   ...props
 }) => {
   return (
-    <div className={cn("relative flex transition-bg px-4 sm:px-0")}>
+    <div className={cn("relative flex transition-bg px-4 md:px-0")}>
       <div className="absolute inset-0 overflow-hidden">
         <div
           className={cn(

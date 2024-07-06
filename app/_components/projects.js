@@ -79,7 +79,7 @@ export const Projects = () => {
   }, []);
 
   return (
-    <div className="container mx-auto py-14 px-4 sm:px-0">
+    <div className="container mx-auto py-14 px-4 md:px-0">
       <div className="space-y-8">
         <h1 className="text-5xl text-center md:text-start font-semibold leading-tight fade-title">
           My
