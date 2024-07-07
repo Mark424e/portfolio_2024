@@ -41,7 +41,7 @@ export const Education = () => {
           {education.map((education, index) => (
             <li key={index}>
               <div className="md:grid grid-cols-3 items-start border-b border-gray-100/25 py-10 relative">
-                <span className="spanPham absolute w-full h-full bg-primary text-[#0d0d0d] clip-path-[polygon(0_50%,_100%_50%,_100%_50%,_0_50%)] origin-center transition-all ease-[cubic-bezier(0.1,0.5,0.5,1)] duration-400 flex flex-col justify-center">
+                <span className="spanPham absolute w-full h-full top-0 bg-primary text-[#0d0d0d] clip-path-[polygon(0_50%,_100%_50%,_100%_50%,_0_50%)] origin-center transition-all ease-[cubic-bezier(0.1,0.5,0.5,1)] duration-400 flex flex-col justify-center">
                   <div className="md:grid grid-cols-3 items-start border-b border-gray-100/25 py-10 relative">
                     <div className="lg:order-2 lg:text-end">
                       <p className="text-4xl lg:text-5xl xl:text-6xl inline-block">
