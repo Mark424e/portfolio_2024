@@ -113,3 +113,10 @@ body {
   justify-content: center;
   height: var(--slide-height);
 }
+
+.spanPham {clip-path: polygon(0 50%, 100% 50%, 100% 50%, 0 50%);
+}
+
+.relative:hover > .spanPham {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}

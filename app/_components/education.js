@@ -1,21 +1,26 @@
 import React from "react";
 import { AnimatedFadeIn } from "./ui/animatedFadeIn";
+import { gsap } from "gsap";
+import { useGSAP } from "@gsap/react";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const education = [
   {
     title: "HTX",
     location: "ZBC Slagelse",
-    date: "September 2017 - June 2020",
+    date: "2017 - 2020",
   },
   {
     title: "Multimedia Design",
     location: "Zealand Slagelse",
-    date: "September 2021 - June 2023",
+    date: "2021 - 2023",
   },
   {
     title: "Webdevelopment",
     location: "Zealand Roskilde",
-    date: "September 2023 - January 2025",
+    date: "2023 - 2025",
   },
 ];
 
@@ -32,16 +37,35 @@ export const Education = () => {
             </span>
           </h1>
         </AnimatedFadeIn>
-        <ul className="space-y-8">
+        <ul>
           {education.map((education, index) => (
             <li key={index}>
-              <div className="md:flex justify-between items-center border-b border-gray-100/25 pb-10">
-                <div className="space-y-4">
-                  <h1 className="font-semibold text-4xl">{education.title}</h1>
-                  <p className="text-gray-500">{education.location}</p>
+              <div className="md:grid grid-cols-3 items-start border-b border-gray-100/25 py-10 relative">
+                <span className="spanPham absolute w-full h-full bg-primary text-[#0d0d0d] clip-path-[polygon(0_50%,_100%_50%,_100%_50%,_0_50%)] origin-center transition-all ease-[cubic-bezier(0.1,0.5,0.5,1)] duration-400 flex flex-col justify-center">
+                  <div className="md:grid grid-cols-3 items-start border-b border-gray-100/25 py-10 relative">
+                    <div className="lg:order-2 lg:text-end">
+                      <p className="text-4xl lg:text-5xl xl:text-6xl inline-block">
+                        {education.date}
+                      </p>
+                    </div>
+                    <div className="lg:order1 space-y-2 col-span-2">
+                      <h1 className="text-4xl lg:text-5xl xl:text-6xl">
+                        {education.title}
+                      </h1>
+                      <p>{education.location}</p>
+                    </div>
+                  </div>
+                </span>
+                <div className="lg:order-2 lg:text-end">
+                  <p className="text-4xl lg:text-5xl xl:text-6xl inline-block">
+                    {education.date}
+                  </p>
                 </div>
-                <div>
-                  <p className="text-gray-500 inline-block">{education.date}</p>
+                <div className="lg:order1 space-y-2 col-span-2">
+                  <h1 className="text-4xl lg:text-5xl xl:text-6xl">
+                    {education.title}
+                  </h1>
+                  <p className="text-gray-500">{education.location}</p>
                 </div>
               </div>
             </li>
