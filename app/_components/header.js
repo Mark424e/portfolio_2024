@@ -9,7 +9,7 @@ gsap.registerPlugin(ScrollToPlugin);
 
 export const Header = () => {
   const handleScrollTo = (target) => {
-    gsap.to(window, { duration: 1, scrollTo: target, ease: "power2.inOut" });
+    gsap.to(window, { duration: 1, scrollTo: {y: target, offsetY: -200}, ease: "power2.inOut" });
   };
 
   return (
