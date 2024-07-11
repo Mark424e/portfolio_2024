@@ -47,7 +47,7 @@ const skills = [
 
 export const Skills = () => {
   return (
-    <AuroraBackground>
+    <div className="relative">
       <div className="block z-10 absolute top-0 w-full h-12 bg-gradient-to-b from-background to-transparent pointer-events-none"></div>
       <div className="block z-10 absolute bottom-0 w-full h-12 bg-gradient-to-t from-background to-transparent pointer-events-none"></div>
       <div className="container mx-auto py-14 md:py-40 lg:py-64 space-y-8">
@@ -85,6 +85,6 @@ export const Skills = () => {
           ))}
         </div>
       </div>
-    </AuroraBackground>
+    </div>
   );
 };

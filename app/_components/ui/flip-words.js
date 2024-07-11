@@ -53,7 +53,7 @@ export const FlipWords = ({ words, duration = 3000, className }) => {
           position: "absolute",
         }}
         className={cn(
-          "inline-block relative bg-gradient-to-t from-primary to-text bg-clip-text text-nowrap p-4 capitalize",
+          "z-10 inline-block relative bg-gradient-to-t from-primary to-text bg-clip-text text-nowrap p-4 capitalize",
           className
         )}
         key={currentWord}
