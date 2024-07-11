@@ -11,7 +11,7 @@ gsap.registerPlugin(ScrollToPlugin);
 
 export const Footer = () => {
   const handleScrollTo = (target) => {
-    gsap.to(window, { duration: 1, scrollTo: target, ease: "power2.inOut" });
+    gsap.to(window, { duration: 1, scrollTo: {y: target, offsetY: -200}, ease: "power2.inOut" });
   };
 
   return (
@@ -36,7 +36,7 @@ export const Footer = () => {
           </div>
           <div>
             <ul className="flex gap-6">
-              <li>
+              <li className="transition hover:scale-125">
                 <a
                   href="https://www.linkedin.com/in/markphillip1800/"
                   target="_blank"
@@ -49,7 +49,7 @@ export const Footer = () => {
                   />
                 </a>
               </li>
-              <li>
+              <li className="transition hover:scale-125">
                 <a href="https://github.com/Mark424e" target="_blank">
                   <Image
                     src="/github.svg"
@@ -61,6 +61,39 @@ export const Footer = () => {
               </li>
             </ul>
           </div>
+        </div>
+        <div>
+          <nav>
+            <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              <li>
+                <button onClick={() => handleScrollTo("#skills")} className="text-left grid space-y-4">
+                  <span className="text-xl">Skills</span>
+                  <span className="hidden md:block text-gray-500">
+                    Check out the things I'm good at, from building websites to
+                    design and more.
+                  </span>
+                </button>
+              </li>
+              <li>
+                <button onClick={() => handleScrollTo("#work")} className="text-left grid space-y-4">
+                  <span className="text-xl">Experience</span>
+                  <span className="hidden md:block text-gray-500">
+                    Check out the things I'm good at, from building websites to
+                    design and more.
+                  </span>
+                </button>
+              </li>
+              <li>
+                <button onClick={() => handleScrollTo("#resume")} className="text-left grid space-y-4">
+                  <span className="text-xl">Resume</span>
+                  <span className="hidden md:block text-gray-500">
+                    See my work history and what I've achieved in a quick and
+                    easy resume.
+                  </span>
+                </button>
+              </li>
+            </ul>
+          </nav>
         </div>
         <div>
           <div className="py-8 flex justify-center items-center">
