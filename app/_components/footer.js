@@ -69,7 +69,7 @@ export const Footer = () => {
                 <button onClick={() => handleScrollTo("#skills")} className="text-left grid space-y-4">
                   <span className="text-xl">Skills</span>
                   <span className="hidden md:block text-gray-500">
-                    Check out the things I'm good at, from building websites to
+                    Check out the things I&apos;m good at, from building websites to
                     design and more.
                   </span>
                 </button>
@@ -78,7 +78,7 @@ export const Footer = () => {
                 <button onClick={() => handleScrollTo("#work")} className="text-left grid space-y-4">
                   <span className="text-xl">Experience</span>
                   <span className="hidden md:block text-gray-500">
-                    Check out the things I'm good at, from building websites to
+                    Check out the things I&apos;m good at, from building websites to
                     design and more.
                   </span>
                 </button>
@@ -87,7 +87,7 @@ export const Footer = () => {
                 <button onClick={() => handleScrollTo("#resume")} className="text-left grid space-y-4">
                   <span className="text-xl">Resume</span>
                   <span className="hidden md:block text-gray-500">
-                    See my work history and what I've achieved in a quick and
+                    See my work history and what I&apos;ve achieved in a quick and
                     easy resume.
                   </span>
                 </button>
