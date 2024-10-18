@@ -32,7 +32,7 @@ const projects = [
   {
     title: "Lemonade Webshop",
     description:
-      "A refreshing lemonade webshop built with React. Features dynamic product displays, real-time inventory updates, and a sleek, responsive design.",
+      "A modern lemonade webshop developed with React, featuring dynamic product displays, real-time inventory management, and a sleek, fully responsive design.",
     vercelLink: "https://lemonadestand-mark.vercel.app/",
     githubLink: "https://github.com/Mark424e/lemonadestand",
     technologies: ["React", "JavaScript", "Axios", "TailWindCSS"],
@@ -41,11 +41,20 @@ const projects = [
   {
     title: "Ice Cream Landingpage",
     description:
-      "One of my very first projects made with pure markup, styling the elements with CSS, and utilizing SASS for more efficient and maintainable CSS.",
+      "One of my early projects involved using pure HTML for structure, applying CSS for styling, and leveraging SASS to create more efficient and maintainable styles.",
     vercelLink: "https://gilleleje-isen.vercel.app/",
     githubLink: "https://github.com/Mark424e/Gilleleje-Isen",
     technologies: ["HTML", "CSS", "Sass"],
     imageSrc: "/project3.webp",
+  },
+  {
+    title: "Law Firm Website",
+    description:
+      "During my third semester, I completed a 10-week internship at MLaw, where I was tasked with building a brand-new website using WordPress",
+    vercelLink: "https://mlaw.dk/",
+    // githubLink: "",
+    technologies: ["WordPress", "WampServer", "PHP", "SEO"],
+    imageSrc: "/project5.webp",
   },
 ];
 
@@ -114,7 +123,7 @@ export const Projects = () => {
                               target="_blank"
                               rel="noopener noreferrer"
                             >
-                              View on Vercel
+                              View site
                             </a>
                             <br />
                           </>
