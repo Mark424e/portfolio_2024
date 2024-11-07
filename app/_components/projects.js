@@ -12,22 +12,13 @@ gsap.registerPlugin(ScrollTrigger);
 */
 const projects = [
   {
-    title: "React Weather Application",
+    title: "Ice Cream Landingpage",
     description:
-      "A weather application that provides real-time weather updates, forecasts, and a responsive design for an optimal viewing experience.",
-    vercelLink: "https://weather-app-mark.vercel.app/",
-    githubLink: "https://github.com/Mark424e/react-weather-app",
-    technologies: ["React", "JavaScript", "Axios", "TailWindCSS"],
-    imageSrc: "/project1.webp",
-  },
-  {
-    title: "E-Commerce Webshop",
-    description:
-      "An e-commerce webshop that offers login/register features with efficient product management, cart information, and a modern, responsive design.",
-    // vercelLink: "NO LINK",
-    githubLink: "https://github.com/Mark424e/webshop",
-    technologies: ["PHP", "MySQL", "TailWindCSS"],
-    imageSrc: "/project4.webp",
+      "One of my early projects involved using pure HTML for structure, applying CSS for styling, and leveraging SASS to create more efficient and maintainable styles.",
+    vercelLink: "https://gilleleje-isen.vercel.app/",
+    githubLink: "https://github.com/Mark424e/Gilleleje-Isen",
+    technologies: ["HTML", "CSS", "Sass"],
+    imageSrc: "/project3.webp",
   },
   {
     title: "Lemonade Webshop",
@@ -39,13 +30,31 @@ const projects = [
     imageSrc: "/project2.webp",
   },
   {
-    title: "Ice Cream Landingpage",
+    title: "E-Commerce Webshop",
     description:
-      "One of my early projects involved using pure HTML for structure, applying CSS for styling, and leveraging SASS to create more efficient and maintainable styles.",
-    vercelLink: "https://gilleleje-isen.vercel.app/",
-    githubLink: "https://github.com/Mark424e/Gilleleje-Isen",
-    technologies: ["HTML", "CSS", "Sass"],
-    imageSrc: "/project3.webp",
+      "An e-commerce webshop that offers login/register features with efficient product management, cart information, and a modern, responsive design.",
+    // vercelLink: "NO LINK",
+    githubLink: "https://github.com/Mark424e/webshop",
+    technologies: ["PHP", "MySQL", "TailWindCSS"],
+    imageSrc: "/project4.webp",
+  },
+  {
+    title: "React Weather Application",
+    description:
+      "A weather application that provides real-time weather updates, forecasts, and a responsive design for an optimal viewing experience.",
+    vercelLink: "https://weather-app-mark.vercel.app/",
+    githubLink: "https://github.com/Mark424e/react-weather-app",
+    technologies: ["React", "JavaScript", "Axios", "TailWindCSS"],
+    imageSrc: "/project1.webp",
+  },
+  {
+    title: "NextJS Weather Application",
+    description:
+      "A similar weather application to my previous project, this one is built using Next.js and TypeScript to deepen my expertise with these technologies.",
+    vercelLink: "https://nextjs-weather-app-mark.vercel.app/",
+    githubLink: "https://github.com/Mark424e/nextjs-weather-app",
+    technologies: ["NextJS", "Typescript", "Axios", "TailWindCSS"],
+    imageSrc: "/project6.webp",
   },
   {
     title: "Law Firm Website",
