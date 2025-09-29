@@ -175,10 +175,7 @@ export const Ibuild = () => {
       <div className="relative">
         <div className="flex justify-start text-lg leading-8 text-gray-500">
           <p className="w-full sm:w-1/2 xl:w-1/3">
-            I specialize in creating optimized, elegant, and modern websites. My
-            background in UI design and front-end development allows me to
-            transform ideas into outstanding and beautiful user experiences
-            while fostering effective collaboration in a team environment.
+            I&apos;m passionate about designing and building websites that are clean, modern and enjoyable to use. With a background in UI design and front-end development, I love turning ideas into beautiful and functional experiences. I also enjoy working closely with others to bring a vision to life and make the process creative and fun.
           </p>
         </div>
         <div className="py-8">
@@ -208,10 +205,7 @@ export const Ibuild = () => {
         </div>
         <div className="flex justify-end text-lg leading-8 text-gray-500">
           <p className="w-full sm:w-1/2 xl:w-1/3">
-            Living in Denmark, I love spending time with friends, whether
-            we&apos;re gaming together or hanging out in person. Music is a big
-            part of my life — I enjoy discovering new tunes, exploring different
-            genres, and even creating my own music.
+            I live in Denmark and spend a lot of my free time with friends, whether that&apos;s gaming together online or meeting up in person. Music is a big part of my life too. I&apos;m always exploring new genres, finding hidden gems and creating some of my own tracks.
           </p>
         </div>
         <div className="absolute top-0 h-full w-full -z-50">

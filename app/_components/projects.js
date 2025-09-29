@@ -12,15 +12,6 @@ gsap.registerPlugin(ScrollTrigger);
 */
 const projects = [
   {
-    title: "Ice Cream Landingpage",
-    description:
-      "One of my early projects involved using pure HTML for structure, applying CSS for styling, and leveraging SASS to create more efficient and maintainable styles.",
-    vercelLink: "https://gilleleje-isen.vercel.app/",
-    githubLink: "https://github.com/Mark424e/Gilleleje-Isen",
-    technologies: ["HTML", "CSS", "Sass"],
-    imageSrc: "/project3.webp",
-  },
-  {
     title: "Lemonade Webshop",
     description:
       "A modern lemonade webshop developed with React, featuring dynamic product displays, real-time inventory management, and a sleek, fully responsive design.",
@@ -28,24 +19,6 @@ const projects = [
     githubLink: "https://github.com/Mark424e/lemonadestand",
     technologies: ["React", "JavaScript", "Axios", "TailWindCSS"],
     imageSrc: "/project2.webp",
-  },
-  {
-    title: "E-Commerce Webshop",
-    description:
-      "An e-commerce webshop that offers login/register features with efficient product management, cart information, and a modern, responsive design.",
-    // vercelLink: "NO LINK",
-    githubLink: "https://github.com/Mark424e/webshop",
-    technologies: ["PHP", "MySQL", "TailWindCSS"],
-    imageSrc: "/project4.webp",
-  },
-  {
-    title: "React Weather Application",
-    description:
-      "A weather application that provides real-time weather updates, forecasts, and a responsive design for an optimal viewing experience.",
-    vercelLink: "https://weather-app-mark.vercel.app/",
-    githubLink: "https://github.com/Mark424e/react-weather-app",
-    technologies: ["React", "JavaScript", "Axios", "TailWindCSS"],
-    imageSrc: "/project1.webp",
   },
   {
     title: "NextJS Weather Application",
@@ -64,6 +37,15 @@ const projects = [
     // githubLink: "",
     technologies: ["WordPress", "WampServer", "PHP", "SEO"],
     imageSrc: "/project5.webp",
+  },
+  {
+    title: "Vaccination Website",
+    description:
+      "As my first official paid freelance project under MPDesign, I built a fully functional website for Vaccinationscenter CPH, focusing on usability, clear information architecture, and a modern design.",
+    vercelLink: "https://vaccinationscentercph.dk/",
+    // githubLink: "",
+    technologies: ["WordPress", "SEO", "Responsive Design"],
+    imageSrc: "/project7.webp",
   },
 ];
 

@@ -36,7 +36,7 @@ export const Footer = () => {
           </div>
           <div>
             <ul className="flex gap-6">
-              <li className="transition hover:scale-125">
+              <li>
                 <a
                   href="https://www.linkedin.com/in/markphillip1800/"
                   target="_blank"
@@ -49,7 +49,7 @@ export const Footer = () => {
                   />
                 </a>
               </li>
-              <li className="transition hover:scale-125">
+              <li>
                 <a href="https://github.com/Mark424e" target="_blank">
                   <Image
                     src="/github.svg"
@@ -112,7 +112,7 @@ export const Footer = () => {
           </div>
           <div className="flex flex-col gap-2 justify-center items-center">
             <div className="text-xs text-white/50 text-center space-y-2">
-              <p>&copy; 2024 Mark Thomassen</p>
+              <p>&copy; {new Date().getFullYear()} Mark Thomassen</p>
               <p>Powered by Vercel, Next.js, and Github.</p>
               <Clock timeZone="Europe/Copenhagen" />
             </div>

@@ -8,39 +8,39 @@ import { AnimatedFadeIn } from "./ui/animatedFadeIn";
 
 const skills = [
   {
-    title: "HTML/CSS",
+    title: "UI/UX Design",
     description:
-      "Mastery in HTML and CSS, fundamental for building the structure and styling of web pages. Crucial for creating responsive web designs and dynamic user experiences.",
-    imageSrc: "/skillhtmlcss.svg",
+      "Expert in crafting intuitive, user-centered interfaces with a strong focus on usability and aesthetics. Skilled in creating wireframes, prototypes, and full visual designs.",
+    imageSrc: "/skilluiux.svg",
   },
   {
-    title: "JavaScript",
+    title: "Web Design",
     description:
-      "Proficient in core JavaScript, including DOM manipulation, event handling, and asynchronous programming with promises and async/await. Essential for adding interactivity and enhancing user experiences.",
-    imageSrc: "/skilljs.svg",
+      "Proficient in Figma and Adobe XD to design modern, responsive, and accessible websites. Experienced in turning creative concepts into visually engaging digital experiences.",
+    imageSrc: "/skillwebdesign.svg",
   },
   {
-    title: "ReactJS",
+    title: "Branding & Visual Identity",
     description:
-      "Experienced in developing single-page applications using React. Proficient with React Hooks, Context API, and React Router for efficient state management and navigation.",
-    imageSrc: "/skillreactjs.svg",
+      "Capable of developing cohesive branding systems including color palettes, typography, and style guides to ensure consistency across digital platforms.",
+    imageSrc: "/skillbranding.svg",
   },
   {
-    title: "NextJS",
+    title: "Creative Frontend Development",
     description:
-      "Skilled in utilizing Next.js for server-side rendering, static site generation, and optimizing web applications with built-in SEO enhancements.",
-    imageSrc: "/skillnextjs.svg",
+      "Combining design with frontend coding. Skilled in HTML, CSS, and JavaScript to bring static designs to life with animations, interactions, and responsiveness.",
+    imageSrc: "/skillfrontend.svg",
   },
   {
-    title: "web Design",
+    title: "React & Next.js",
     description:
-      "Proficient in design tools like Figma and Adobe XD for wireframing, UI/UX design, and creating interactive prototypes. Adept at translating design concepts into functional web interfaces.",
-    imageSrc: "/logo5.svg",
+      "Able to implement pixel-perfect designs into React and Next.js with focus on performance, accessibility, and SEO best practices.",
+    imageSrc: "/skillreactnext.svg",
   },
   {
-    title: "SEO",
+    title: "SEO & Accessibility",
     description:
-      "Experienced in optimizing websites for search engines. Knowledgeable in technical SEO, on-page optimization, and utilizing analytics tools to devise effective SEO strategies.",
+      "Experienced in making websites not only visually appealing but also discoverable and usable for all audiences. Knowledgeable in on-page SEO, semantic HTML, and WCAG guidelines.",
     imageSrc: "/skillseo.svg",
   },
 ];
